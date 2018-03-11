@@ -1,0 +1,56 @@
+@import "~compass-mixins";
+
+.progress-wrapper {
+  height: 11.56rem;
+  font-size: 40px;
+
+  position: relative;
+}
+  .current {
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 1;
+
+    position: absolute;
+    top: 3.438rem;
+    left: 50%;
+    @include translate(-50%, -50%);
+    color: #89939a;
+  }
+  .progress-label {
+    font-size: 0.875rem;
+    width: 100%;
+
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    color: #89939a;
+  }
+
+.worker-location {
+  .card-body {
+    height: 200px;
+  }
+}
+
+.user-status {
+  &::before {
+    width: 0.5625rem;
+    height: 0.5625rem;
+
+    margin: 0 0.5rem;
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+  }
+  &--online::before {
+    background-color: #96cb17;
+  }
+  &--away::before {
+    background-color: #f5a623;
+  }
+  &--busy::before {
+    background-color: #d0021b;
+  }
+}

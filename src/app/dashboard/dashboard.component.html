@@ -1,0 +1,295 @@
+<div class="content-flex px-5 py-4">
+  <!-- BREADCRUMB -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active">Dashboard</li>
+    </ol>
+    <div class="row">
+      <!-- NOTIFICATIONS -->
+      <div class="col-4">
+        <div class="card notifications">
+          <div class="card-header">
+            <div class="row m-0">
+              <div class="col card-header-name">(23) Notifications</div>
+              <div ngbDropdown class="dropdown p-0 col-5">
+                <button class="btn w-100"
+                        id="notification-filter"
+                        ngbDropdownToggle>Filter</button>
+                <div ngbDropdownMenu aria-labelledby="notification-filter">
+                  <button class="dropdown-item">Message</button>
+                  <button class="dropdown-item">Installed</button>
+                  <button class="dropdown-item">Updated</button>
+                  <button class="dropdown-item">Accepted</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item list-group-item-action flex-column align-items-start active">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small>3 days ago</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>Donec id elit non mi porta.</small>
+                <div class="message-box">Go somewhere</div>
+                <a href="#"><u>Go to Messages</u></a>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small class="text-muted">Donec id elit non mi porta.</small>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small class="text-muted">Donec id elit non mi porta.</small>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-muted text-center">
+            <a href="#"><u>read more</u></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <!-- PROGRESS -->
+        <div class="row progress-container mb-4">
+          <div class="progress-wrapper col-3">
+            <div class="current">{{openJobsWeek.current}}/{{openJobsWeek.total}}</div>
+            <round-progress class="mx-auto"
+                            [radius]="55"
+                            [stroke]="8"
+                            [color]="'#29abe2'"
+                            [current]="openJobsWeek.current"
+                            [max]="openJobsWeek.total"></round-progress>
+            <div class="progress-label">
+              <div>Open Jobs</div>
+              <div>0 - 7 Days</div>
+            </div>
+          </div>
+          <div class="progress-wrapper col-3">
+            <div class="current">{{openJobsMonth.current}}/{{openJobsMonth.total}}</div>
+            <round-progress class="mx-auto"
+                            [radius]="55"
+                            [stroke]="8"
+                            [color]="'#29abe2'"
+                            [current]="openJobsMonth.current"
+                            [max]="openJobsMonth.total"></round-progress>
+            <div class="progress-label">
+              <div>Open Jobs</div>
+              <div>7 - 30 Days</div>
+            </div>
+          </div>
+          <div class="progress-wrapper col-3">
+            <div class="current">{{appNotInstalled.current}}/{{appNotInstalled.total}}</div>
+            <round-progress class="mx-auto"
+                            [radius]="55"
+                            [stroke]="8"
+                            [color]="'#29abe2'"
+                            [current]="appNotInstalled.current"
+                            [max]="appNotInstalled.total"></round-progress>
+            <div class="progress-label">App Not Installed</div>
+          </div>
+          <div class="progress-wrapper col-3">
+            <div class="current">{{unverifiedWorkers.current}}/{{unverifiedWorkers.total}}</div>
+            <round-progress class="mx-auto"
+                            [radius]="55"
+                            [stroke]="8"
+                            [color]="'#29abe2'"
+                            [current]="unverifiedWorkers.current"
+                            [max]="unverifiedWorkers.total"></round-progress>
+            <div class="progress-label">Unverified Workers</div>
+          </div>
+        </div>
+        <!-- WORKER LOCATION -->
+        <div class="card worker-location mb-4">
+          <div class="card-header">
+            <div class="card-header-name">Worker Location</div>
+          </div>
+          <div class="card-body p-0">
+            <ng-scrollbar>
+              <div class="list-group list-group-flush">
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span class="user-status user-status--online">Sally Salazar</span>
+                    </div>
+                    <div class="col pl-2">General Labour</div>
+                    <div class="text-muted col pl-2">Enroute: On Time</div>
+                    <div class="time col-2 pl-2 text-right">
+                      <div>9:00 am</div>
+                      <small class="text-muted">8:45 am</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span class="user-status user-status--online">Rachel Jordan</span>
+                    </div>
+                    <div class="col pl-2">Warehouse Job</div>
+                    <div class="text-muted col pl-2">On Site</div>
+                    <div class="time col-2 pl-2 text-right">
+                      <div>9:00 am</div>
+                      <small class="text-muted">8:45 am</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span class="user-status user-status--online">Essie Ross</span>
+                    </div>
+                    <div class="col pl-2">General Labour</div>
+                    <div class="text-muted col pl-2">Enroute: Late</div>
+                    <div class="time col-2 pl-2 text-right">
+                      <div>9:00 am</div>
+                      <small class="text-muted">8:45 am</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span class="user-status user-status--online">Rosalie Nunez</span>
+                    </div>
+                    <div class="col pl-2">General Labour</div>
+                    <div class="text-muted col pl-2">Enroute: Late</div>
+                    <div class="time col-2 pl-2 text-right">
+                      <div>9:00 am</div>
+                      <small class="text-muted">8:45 am</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span class="user-status user-status--online">Sally Salazar</span>
+                    </div>
+                    <div class="col pl-2">General Labour</div>
+                    <div class="text-muted col pl-2">Enroute: On Time</div>
+                    <div class="time col-2 pl-2 text-right">
+                      <div>9:00 am</div>
+                      <small class="text-muted">8:45 am</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-scrollbar>
+          </div>
+        </div>
+        <!-- ASSIGNED JOBS -->
+        <div class="row progress-container"></div>
+        <div class="card worker-location">
+          <div class="card-header">
+            <div class="card-header-name">Assigned Jobs</div>
+          </div>
+          <div class="card-body p-0">
+            <ng-scrollbar>
+              <div class="list-group list-group-flush">
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span>Apple Inc</span>
+                    </div>
+                    <div class="col pl-2">General Labour</div>
+                    <div class="text-muted col-2 pl-2">
+                      <div>10/22/2017 -</div>
+                      <div>12/20/2017</div>
+                    </div>
+                    <div class="text-muted col-2 pl-2">Open</div>
+                    <div class="text-success col-1 pl-2">3/3</div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span>Warehouse Store</span>
+                    </div>
+                    <div class="col pl-2 text-muted">Warehouse Job</div>
+                    <div class="text-muted col-2 pl-2">
+                      <div>10/22/2017 -</div>
+                      <div>12/20/2017</div>
+                    </div>
+                    <div class="text-muted col-2 pl-2">Open</div>
+                    <div class="text-danger col-1 pl-2">1/5</div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span>Big Warehouse</span>
+                    </div>
+                    <div class="col pl-2">Big Warehouse Job</div>
+                    <div class="text-muted col-2 pl-2">
+                      <div>10/22/2017 -</div>
+                      <div>12/20/2017</div>
+                    </div>
+                    <div class="text-muted col-2 pl-2">Open</div>
+                    <div class="text-success col-1 pl-2">3/3</div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span>Packing R Us</span>
+                    </div>
+                    <div class="col pl-2">Packing Job</div>
+                    <div class="text-muted col-2 pl-2">
+                      <div>10/22/2017 -</div>
+                      <div>12/20/2017</div>
+                    </div>
+                    <div class="text-muted col-2 pl-2">Closed</div>
+                    <div class="text-success col-1 pl-2">3/3</div>
+                  </div>
+                </div>
+                <div class="list-group-item py-1 px-3 list-group-item-action">
+                  <div class="row no-gutters w-100 justify-content-between align-items-center">
+                    <div class="col">
+                      <img class="list-user-avatar"
+                           src="assets/image/avatar@2x.png">
+                      <span>Apple Inc</span>
+                    </div>
+                    <div class="col pl-2">General Labour</div>
+                    <div class="text-muted col-2 pl-2">
+                      <div>10/22/2017 -</div>
+                      <div>12/20/2017</div>
+                    </div>
+                    <div class="text-muted col-2 pl-2">Open</div>
+                    <div class="text-success col-1 pl-2">3/3</div>
+                  </div>
+                </div>
+              </div>
+            </ng-scrollbar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

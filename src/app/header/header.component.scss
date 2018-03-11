@@ -1,0 +1,79 @@
+.main-header {
+  padding: 0.75rem 3.125rem;
+  background-color: #29abe2;
+}
+  .bell-btn {
+    width: 1.875rem;
+    height: 1.875rem;
+
+    display: inline-block;
+    vertical-align: middle;
+    background: url("assets/image/bell-icon.svg") no-repeat center center;
+    cursor: pointer;
+  }
+  .user-avatar {
+    width: 1.875rem;
+    height: 1.875rem;
+
+    display: inline-block;
+    vertical-align: middle;
+    background: url("assets/image/avatar.png") no-repeat center center;
+    border-radius: 50%;
+  }
+
+.sub-header {
+  border-bottom: 0.0625rem solid rgba(151, 151, 151, 0.37);
+}
+  .nav {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 200;
+  }
+    .nav-item {
+      margin: 0 1.875rem;
+    }
+      .nav-link {
+        padding: 1.25rem 0 1.125rem;
+
+        color: #89939a;
+        box-sizing: border-box;
+
+        &.active {
+          border-bottom: 0.125rem solid #29abe2;
+
+          font-weight: 400;
+          color: #29abe2;
+        }
+      }
+
+  .sub-menu--actions {
+    margin: 1rem 0 0.9375rem 0.625rem;
+  }
+  .search-btn {
+    width: 1.875rem;
+    height: 1.875rem;
+
+    display: inline-block;
+    vertical-align: middle;
+    background: url("assets/image/search-icon.svg") no-repeat center center;
+    cursor: pointer;
+  }
+  .chat-btn {
+    width: 1.875rem;
+    height: 1.875rem;
+
+    display: inline-block;
+    vertical-align: middle;
+    background: url("assets/image/message.svg") no-repeat center center;
+    cursor: pointer;
+  }
+  .config-btn {
+    width: 1.875rem;
+    height: 1.875rem;
+
+    display: inline-block;
+    vertical-align: middle;
+    background: url("assets/image/cog-icon.svg") no-repeat center center;
+    cursor: pointer;
+  }

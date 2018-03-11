@@ -1,0 +1,178 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import "~compass-mixins";
+
+html, body { height: 100%; }
+
+body {
+  font-family: Roboto;
+  font-size: 1.25rem;
+}
+
+.text-muted { color: #89939a; }
+
+.form-control {
+  font-size: 0.875rem;
+  border: solid 1px #e2e9ef;
+
+  font-weight: 200;
+  color: #89939a;
+  background-color: #ffffff;
+  border-radius: 3px;
+
+  &::-webkit-input-placeholder {
+    color: #89939a;
+  }
+  &::-moz-placeholder {
+    color: #89939a;
+  }
+  &:-ms-input-placeholder {
+    color: #89939a;
+  }
+  &:-moz-placeholder {
+    color: #89939a;
+  }
+}
+
+.btn {
+  font-size: 0.875rem;
+  font-weight: 200;
+  padding-top: 0.6875rem;
+  padding-bottom: 0.6875rem;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &.btn-primary {
+    background-color: #29ABE2;
+    border: 0;
+
+    &:hover,
+    &:not(:disabled):not(.disabled):active {
+      background-color: #26A0D4;
+      border: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+.breadcrumb {
+  font-size: 0.875rem;
+  font-weight: 200;
+  border: 1px dashed #e2e9ef;
+
+  background-color: #f4f7fa;
+}
+
+.breadcrumb-item {
+    color: #a7b9c6;
+
+  & + &::before {
+    content: '>';
+  }
+  &.active {
+    color: #29abe2;
+  }
+}
+
+.card {
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+
+  .card-header {
+    padding: 0.4375rem 0.9375rem;
+
+    background-color: #f4f7fa;
+    border-color: #e2e9ef;
+    color: #89939a;
+  }
+    .card-header-name {
+      line-height: 1;
+      padding: 0.625rem 0;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+  .card-body {
+    background-color: #fff;
+    border-color: #e2e9ef;
+    color: #212121;
+  }
+
+.dropdown[ngbDropdown] {
+  border-radius: 0.1875rem;
+  background-color: #ffffff;
+
+  .btn[ngbDropdownToggle] {
+    line-height: 1.05;
+    font-size: 0.875rem;
+    font-weight: 200;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-right: 2.125rem;
+    border: solid 1px #e2e9ef;
+
+    text-align: left;
+    color: #b0bac5;
+    background-color: #fff;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &::after {
+      width: 0.9375rem;
+      height: 100%;
+      border: 0;
+
+      position: absolute;
+      right: 0.5625rem;
+      top: 0;
+      background: url("assets/image/ios-arrow-down.svg") no-repeat center center;
+    }
+    &[aria-expanded="true"]::after {
+      @include rotate(180deg);
+    }
+  }
+}
+  .dropdown-menu {
+    width: 100%;
+    min-width: 5rem;
+    line-height: 1;
+    font-size: 0.875rem;
+    font-weight: 200;
+    border-top: 0;
+
+    margin: 0;
+    border-radius: 0 0 0.1875rem 0.1875rem;
+  }
+    .dropdown-item {
+      padding: 0.5rem 0.75rem;
+      color: #89939a;
+
+      &.active {
+        padding-left: 0.625rem;
+        border-left: 0.125rem solid #29abe2;
+
+        color: #29abe2;
+        background-color: #fff;
+      }
+    }
+
+.list-group {
+  font-weight: 400;
+}
+  .list-group-item {
+    color: #212121;
+  }
+    .list-user-avatar {
+      width: 2.25rem;
+      height: 2.25rem;
+
+      border-radius: 50%;
+    }

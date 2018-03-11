@@ -1,0 +1,55 @@
+:host {
+  height: 100%;
+
+  background-color: #f8f9fa;
+  display: block;
+}
+
+.login-logo {
+  width: 340px;
+  padding: 6.25rem 0 1.25rem;
+
+  text-align: center;
+}
+
+  .login-logo-image {
+    width: 150px;
+    height: 150px;
+  }
+
+
+.login-container {
+  width: 340px;
+
+  margin: auto;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .card {
+    border: solid 1px #e2e9ef;
+
+    background-color: #fdfdfe;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+}
+  .btn-signup {
+    display: block;
+  }
+
+.have-account {
+  font-size: 0.875rem;
+  font-weight: normal;
+
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+
+  &:link,
+  &:active,
+  &:visited {
+    color: #5595df;
+  }
+}

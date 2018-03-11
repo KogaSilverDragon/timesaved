@@ -1,0 +1,36 @@
+<div class="container h-100">
+  <div class="login-logo mx-auto">
+    <img src="assets/image/custom-app-icon.svg"
+         class="login-logo-image"
+         alt="TimeSaved Logo">
+    <div class="mt-4 text-left">Connect with the candidates faster.</div>
+  </div>
+  <div class="login-container">
+    <h2>Sign Up</h2>
+    <div class="card">
+      <form novalidate
+            (submit)="signup($event)"
+            class="card-body text-center">
+          <input id="signup-first-name"
+                 class="form-control mb-3"
+                 placeholder="First name"
+                 type="text">
+          <input id="signup-last-name"
+                 class="form-control mb-3"
+                 placeholder="Last name"
+                 type="text">
+          <input id="signup-email"
+                 class="form-control mb-3"
+                 placeholder="Email"
+                 type="email">
+          <input id="signup-password"
+                 class="form-control mb-5"
+                 placeholder="Password"
+                 type="password">
+        <button class="btn btn-primary mx-auto px-5"
+                type="submit">Sign Up</button>
+      </form>
+    </div>
+    <a class="have-account mt-3" href="#">Have an account? Sign here.</a>
+  </div>
+</div>
