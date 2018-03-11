@@ -176,3 +176,18 @@ body {
 
       border-radius: 50%;
     }
+
+.timesaved-scroll {
+  .ng-scrollbar {
+    border: 0.0625rem solid #E2E9EF;
+
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: 1;
+
+    &-thumb {
+      background-color: #A7B9C6;
+    }
+  }
+}

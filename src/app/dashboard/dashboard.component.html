@@ -26,31 +26,46 @@
           </div>
           <div class="card-body p-0">
             <div class="list-group list-group-flush">
-              <div class="list-group-item list-group-item-action flex-column align-items-start active">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small>3 days ago</small>
+              <div class="list-group-item flex-column align-items-start notifications-item notifications-chat">
+                <div class="d-flex justify-content-between w-100">
+                  <b>Nannie Bowman</b>
+                  <small class="text-nowrap text-muted">Today, 12:55pm</small>
                 </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                <small>Donec id elit non mi porta.</small>
-                <div class="message-box">Go somewhere</div>
-                <a href="#"><u>Go to Messages</u></a>
+                <p class="mb-1">messaged you</p>
+                <div class="extra-data">
+                  <p class="message-box mt-3 mb-1">Yes I am! how long is the job?</p>
+                  <p>
+                    <a href="#"><u>Go to Messages</u></a>
+                  </p>
+                </div>
               </div>
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
+              <div class="list-group-item flex-column align-items-start notifications-item notifications-install">
+                <div class="d-flex justify-content-between w-100">
+                  <b>3 people</b>
+                  <small class="text-nowrap text-muted">Today, 11:10pm</small>
                 </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                <small class="text-muted">Donec id elit non mi porta.</small>
+                <p class="mb-1">intalled the app</p>
               </div>
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
+              <div class="list-group-item flex-column align-items-start notifications-item notifications-update">
+                <div class="d-flex justify-content-between w-100">
+                  <b>10 people</b>
+                  <small class="text-nowrap text-muted">Today, 9:30pm</small>
                 </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                <small class="text-muted">Donec id elit non mi porta.</small>
+                <p class="mb-1">added new skills</p>
+              </div>
+              <div class="list-group-item flex-column align-items-start notifications-item notifications-accept">
+                <div class="d-flex justify-content-between w-100">
+                  <b>Karl Trent</b>
+                  <small class="text-nowrap text-muted">Today, 9:10pm</small>
+                </div>
+                <p class="mb-1">Accepted Warehouse Job</p>
+              </div>
+              <div class="list-group-item flex-column align-items-start notifications-item notifications-chat">
+                <div class="d-flex justify-content-between w-100">
+                  <b>Peter Paul</b>
+                  <small class="text-nowrap text-muted">Today, 12:55pm</small>
+                </div>
+                <p class="mb-1">messaged you</p>
               </div>
             </div>
           </div>
@@ -115,11 +130,11 @@
             <div class="card-header-name">Worker Location</div>
           </div>
           <div class="card-body p-0">
-            <ng-scrollbar>
+            <ng-scrollbar class="timesaved-scroll">
               <div class="list-group list-group-flush">
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
+                    <div class="col-4 text-truncate">
                       <img class="list-user-avatar"
                            src="assets/image/avatar@2x.png">
                       <span class="user-status user-status--online">Sally Salazar</span>
@@ -134,7 +149,7 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
+                    <div class="col-4 text-truncate">
                       <img class="list-user-avatar"
                            src="assets/image/avatar@2x.png">
                       <span class="user-status user-status--online">Rachel Jordan</span>
@@ -149,10 +164,10 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
+                    <div class="col-4 text-truncate">
                       <img class="list-user-avatar"
                            src="assets/image/avatar@2x.png">
-                      <span class="user-status user-status--online">Essie Ross</span>
+                      <span class="user-status user-status--busy">Essie Ross</span>
                     </div>
                     <div class="col pl-2">General Labour</div>
                     <div class="text-muted col pl-2">Enroute: Late</div>
@@ -164,10 +179,10 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
+                    <div class="col-4 text-truncate">
                       <img class="list-user-avatar"
                            src="assets/image/avatar@2x.png">
-                      <span class="user-status user-status--online">Rosalie Nunez</span>
+                      <span class="user-status user-status--away">Rosalie Nunez</span>
                     </div>
                     <div class="col pl-2">General Labour</div>
                     <div class="text-muted col pl-2">Enroute: Late</div>
@@ -179,7 +194,7 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
+                    <div class="col-4 text-truncate">
                       <img class="list-user-avatar"
                            src="assets/image/avatar@2x.png">
                       <span class="user-status user-status--online">Sally Salazar</span>
@@ -200,15 +215,20 @@
         <div class="row progress-container"></div>
         <div class="card worker-location">
           <div class="card-header">
-            <div class="card-header-name">Assigned Jobs</div>
+            <div class="row no-gutters align-items-end">
+              <div class="col card-header-name">Assigned Jobs</div>
+              <div class="col-2 reorder">Date</div>
+              <div class="col-2 reorder">Status</div>
+              <div class="col-1 reorder">Filled</div>
+            </div>
           </div>
           <div class="card-body p-0">
-            <ng-scrollbar>
+            <ng-scrollbar class="timesaved-scroll">
               <div class="list-group list-group-flush">
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
-                      <img class="list-user-avatar"
+                    <div class="col-4 text-truncate">
+                      <img class="list-user-avatar mr-2"
                            src="assets/image/avatar@2x.png">
                       <span>Apple Inc</span>
                     </div>
@@ -223,12 +243,12 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
-                      <img class="list-user-avatar"
+                    <div class="col-4 text-truncate">
+                      <img class="list-user-avatar mr-2"
                            src="assets/image/avatar@2x.png">
                       <span>Warehouse Store</span>
                     </div>
-                    <div class="col pl-2 text-muted">Warehouse Job</div>
+                    <div class="col pl-2">Warehouse Job</div>
                     <div class="text-muted col-2 pl-2">
                       <div>10/22/2017 -</div>
                       <div>12/20/2017</div>
@@ -239,8 +259,8 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
-                      <img class="list-user-avatar"
+                    <div class="col-4 text-truncate">
+                      <img class="list-user-avatar mr-2"
                            src="assets/image/avatar@2x.png">
                       <span>Big Warehouse</span>
                     </div>
@@ -255,8 +275,8 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
-                      <img class="list-user-avatar"
+                    <div class="col-4 text-truncate">
+                      <img class="list-user-avatar mr-2"
                            src="assets/image/avatar@2x.png">
                       <span>Packing R Us</span>
                     </div>
@@ -271,8 +291,8 @@
                 </div>
                 <div class="list-group-item py-1 px-3 list-group-item-action">
                   <div class="row no-gutters w-100 justify-content-between align-items-center">
-                    <div class="col">
-                      <img class="list-user-avatar"
+                    <div class="col-4 text-truncate">
+                      <img class="list-user-avatar mr-2"
                            src="assets/image/avatar@2x.png">
                       <span>Apple Inc</span>
                     </div>
