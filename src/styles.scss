@@ -9,7 +9,7 @@ body {
   font-size: 1.25rem;
 }
 
-.text-muted { color: #89939a; }
+.text-muted { color: #89939a !important; }
 
 .form-control {
   font-size: 0.875rem;
@@ -37,8 +37,8 @@ body {
 .btn {
   font-size: 0.875rem;
   font-weight: 200;
-  padding-top: 0.6875rem;
-  padding-bottom: 0.6875rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 

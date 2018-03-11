@@ -1,3 +1,110 @@
-<p>
-  jobs works!
-</p>
+<div class="content-flex px-5 py-4">
+  <!-- BREADCRUMB -->
+  <div class="row mb-3">
+    <nav class="col pr-0" aria-label="breadcrumb">
+      <ol class="breadcrumb my-0">
+        <li class="breadcrumb-item">Jobs</li>
+        <li class="breadcrumb-item">Active Jobs</li>
+        <li class="breadcrumb-item">Job 123456</li>
+        <li class="breadcrumb-item active">David McCoy</li>
+      </ol>
+    </nav>
+    <div class="col-2">
+      <button class="btn btn-primary btn-block"
+              type="button">New Job</button>
+    </div>
+  </div>
+  <div class="row">
+    <!-- WORKER ACTIVITY -->
+    <div class="col-4">
+      <div class="card worker-activity">
+        <div class="card-header">
+          <div class="row m-0">
+            <div class="col card-header-name">Worker Activity</div>
+            <div ngbDropdown class="dropdown p-0 col-5">
+              <button class="btn w-100"
+                      id="activity-date-filter"
+                      ngbDropdownToggle>Date</button>
+              <div ngbDropdownMenu aria-labelledby="activity-date-filter">
+                <button class="dropdown-item">Today</button>
+                <button class="dropdown-item">Yesterday</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="list-group list-group-flush">
+            <div class="list-group-item flex-column align-items-start worker-activity-item"
+                 *ngFor="let status of workerActivity.status">
+              <div class="activity-time text-lowercase">{{status.date | date: 'shortTime'}}</div>
+              <div class="activity-description">{{status.comment}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <!-- WORKER -->
+      <div class="card worker mb-4">
+        <div class="card-header">
+          <div class="row no-gutters align-items-center">
+            <div class="col-4 user-name">
+              <img class="list-user-avatar mr-2"
+                   src="assets/image/oval-2@2x.png">
+              <span class="align-middle">Essie Ross</span>
+            </div>
+            <div class="col-4 text-muted">North York, ON.</div>
+            <div class="col">
+              <ul class="mx-0 nav nav-pills justify-content-end worker-actions">
+                <li class="nav-item location-icon"></li>
+                <li class="nav-item message-icon"></li>
+                <li class="nav-item delete-icon"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-nav">
+          <ul class="mx-0 nav worker-data-nav">
+            <li class="nav-item">
+              <span class="nav-link active">About David</span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link">Work History</span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link">Reviews</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <p>I have lot of experience in the warehouse setting. I’ve worked for Honda and Ford in the past and have passed all the safety tests required to pass at both plants. I also have all of the safety equipment necessary for any heavy warehouse position.</p>
+          <div class="h5">Skills</div>
+          <ul class="tag-list">
+            <li class="tag-list-item">Shop Work</li>
+            <li class="tag-list-item">CNC Operation</li>
+          </ul>
+        </div>
+      </div>
+      <!-- ASSIGNED JOBS -->
+      <div class="card worker-location">
+        <div class="card-header">
+          <div class="card-header-name">Questions for the Worker About the Job - Answers</div>
+        </div>
+        <div class="card-body">
+          <div class="mb-2">
+            <div class="text-muted">Do you have safety equipment?</div>
+            <div>Yes</div>
+          </div>
+          <div class="mb-2">
+            <div class="text-muted">Do you have your license?</div>
+            <div>Yes</div>
+          </div>
+          <div class="mb-2">
+            <div class="text-muted">Do you have access to a car?</div>
+            <div>Yes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

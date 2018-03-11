@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { ScrollbarModule } from 'ngx-scrollbar';
 import {RoundProgressModule} from 'angular-svg-round-progressbar';
+import {WorkerService} from "./worker.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -21,12 +23,13 @@ import {RoundProgressModule} from 'angular-svg-round-progressbar';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     NgbModule.forRoot(),
     AppRoutingModule,
     ScrollbarModule,
     RoundProgressModule,
   ],
-  providers: [],
+  providers: [WorkerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,141 @@
+.worker-activity {
+  .card-body {
+    position: relative;
+
+    &::before {
+      height: calc(100% - 0.625rem);
+      width: 0.125rem;
+
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 1.625rem;
+      background-color: #d8d8d8;
+      z-index: 10;
+    }
+  }
+
+  .list-group-item {
+    padding-left: 3.75rem;
+    padding-top: 0.4375rem;
+    padding-bottom: 0.4375rem;
+
+    position: relative;
+
+    &:nth-last-of-type(even) { background-color: #f4f7fa }
+
+    &::before {
+      height: 0.5rem;
+      width: 0.5rem;
+
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.8125rem;
+      left: 1.438rem;
+      background-color: #29abe2;
+      border-radius: 50%;
+      z-index: 11;
+    }
+    &:focus,
+    &:hover {
+      z-index: initial;
+    }
+  }
+}
+  .activity-time {
+    &::before {
+      height: 0.5625rem;
+      width: 0.5625rem;
+
+      content: '';
+      margin: 0 0.625rem 0 -1.25rem;
+      display: inline-block;
+      background: url("assets/image/clock.svg") no-repeat center center;
+    }
+  }
+
+.user-name {
+  font-weight: 400;
+
+  color: #212121;
+
+  .list-user-avatar {
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+  }
+}
+
+.tag-list {
+  padding: 0;
+  font-size: 0.875rem;
+
+  margin: 0;
+
+  &-item {
+    padding: 0.6875rem 0.625rem;
+    line-height: 1.05;
+
+    margin-right: 0.625rem;
+    display: inline-block;
+    border-radius: 0.1875rem;
+    background-color: #29abe2;
+    color: #fff;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+.worker-actions {
+  .nav-item {
+    margin-right: 0.3125rem;
+    cursor: pointer;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &::before {
+      width: 1.875rem;
+      height: 1.875rem;
+
+      content: '';
+      display: block;
+      background: no-repeat center center;
+    }
+  }
+  .location-icon::before { background-image: url("assets/image/map-location.svg"); }
+  .message-icon::before { background-image: url("assets/image/chat-box.svg"); }
+  .delete-icon::before { background-image: url("assets/image/trash.svg"); }
+}
+
+.worker-data-nav {
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 200;
+
+  background-color: #f4f7fa;
+  border-bottom: 0.0625rem solid #e2e9ef;
+
+  .nav-item {
+    margin: 0 1.563rem;
+  }
+  .nav-link {
+    padding: 0.875rem 0 0.75rem;
+
+    color: #89939a;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &.active {
+      border-bottom: 0.125rem solid #29abe2;
+
+      font-weight: 400;
+      color: #29abe2;
+    }
+  }
+}

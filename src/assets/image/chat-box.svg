@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>CEE35126-DCEA-4419-9DC1-F42BF9A5607D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Web-App-Main-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Active-Jobs-Worker-Activity" transform="translate(-904.000000, -195.000000)">
+            <g id="webapp/Chat-box" transform="translate(904.000000, 195.000000)">
+                <g id="Add-Worker-Icon">
+                    <rect id="Rectangle-5" fill="#29ABE2" x="0" y="0" width="30" height="30" rx="3"></rect>
+                    <path d="M7,24.4001417 L11.5,20.31917 L23.875,20.31917 C24.4982528,20.31917 25,19.7991377 25,19.1531781 L25,9.24223822 C25,8.59627579 24.4982528,8.07624632 23.875,8.07624632 L8.125,8.07624632 C7.50174719,8.07624632 7,8.59627579 7,9.24223822 L7,24.4001417 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" fill="#29ABE2" x="10" y="11" width="10" height="1"></rect>
+                    <rect id="Rectangle-Copy" fill="#29ABE2" x="10" y="13" width="10" height="1"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#29ABE2" x="10" y="15" width="7" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
