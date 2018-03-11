@@ -35,7 +35,7 @@
         <div class="card-body p-0">
           <div class="list-group list-group-flush">
             <div class="list-group-item flex-column align-items-start worker-activity-item"
-                 *ngFor="let status of workerActivity.status">
+                 *ngFor="let status of workerActivity?.status">
               <div class="activity-time text-lowercase">{{status.date | date: 'shortTime'}}</div>
               <div class="activity-description">{{status.comment}}</div>
             </div>
